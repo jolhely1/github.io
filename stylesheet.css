@@ -1,111 +1,227 @@
-/* CSSのリセット（消さないでください） */
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,
-form, input, div {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
-}
-
-li {
-  list-style: none;
-}
-
-/* ここからCSSを記述してください */
-header {
-  background-color: #26d0c9;
-  color: #fff;
-  
-}
-
-.header-logo {
-  float: left;
-  font-size: 36px;
-  padding: 20px 40px;
-  background-colr:black;
-}
-
-.header-list li {
-  float: left;
-  padding: 33px 20px;
-  background-colr:green;
-}
-.clear {
-clear: both;
-}
-main{
-  padding:100px 80px;
-  color:black;
-  
-}
-
-.copy h1{
-  font-size:140px;
-}
-.copy h2{
-  font-size:60px;
-}
-.copy span{
-  color:#ff4a4a;
-}
-
-h3{
-  font-size:28px;
-  padding:0px 0px 15px;
-  margin-bottom:50px;
-  border-bottom:2px solid #dee7ec;
-}
-.lessons{
-  padding-top:100px;
-  height:500px;
-}
-.lesson{
-  float:left;
-  padding-right:40px;
-  
-}
-.img{
-  
-}
-.lesson p{
-  font-size:24px;
-  padding-top:30px;
-}
-.contact{
-  padding-top:100px;
-}
-
-input, textarea{
-  padding:20px;
-  margin: 10PX 0PX 30px;
-  border:1px solid #dee7ec;
-  width:400px;
-}
-.submit{
-  font-size:18px;
-  background-color: #dee7ec;
-    color: #889eab;
-}
-.footer {
-  background-color: #2f5167;
-  color: #fff;
-  height: 120px;
-  padding: 40px;
-}
-
-.footer-logo {
-  float: left;
-  font-size: 32px;
-}
-
-.footer-list {
-  float: right;
-}
-
-.footer-list li {
-  padding-bottom: 20px;
-}
+*{
+   margin: 0px;
+   padding: 0px;
+   }
+   body{
+   width:100%;
+   }
+   header{
+    box-sizing:border-box;
+       background-color:rgb(38,208,201) ;
+       color: white;
+       padding: 0px 20px;
+       margin: 0;
+    width:100%;
+    height:50px;
+    position:fixed;
+   }
+   .header-logo{
+    font-size: 30px;
+    float:left;
+    margin:0;
+    display:inline-block;
+    width:100px;
+   }
+   .header-link{
+    float:left;
+    padding:15px;
+       
+   }
+   .header-link a{
+       font-size: ;
+    color:white;
+    margin:18px;
+   }
+   
+    .link-icon{
+     display:none;
+    }
+    
+   
+   .clear{
+    clear:both;
+   }
+   
+   main{
+    padding:0px 50px;
+   }
+   /*---メッセージパーツです---*/
+   .message{
+    padding:100px 0px 80px;
+   }
+   .message h1{
+    font-size:100px;
+   }
+   span{
+    color:red;
+   }
+   .message p{
+    font-size:40px;
+    font-weight:bold;
+   }
+   
+   /*---レッスンパーツです---*/
+   
+   h3{
+    font-size:20px;
+    padding:15px 0px;
+    border-bottom:1px solid ;
+    
+   }
+   
+   .lessons{
+    padding-bottom:100px;
+   }
+   .lesson{
+    width:;
+    float:left;
+    margin:30px 25px 0px 0px;
+   }
+   
+   .lesson p{
+    font-size:20px;
+    margin-top:20px;
+   }
+   .clear{
+    clear:both;
+   }
+   
+   /*---コンタクトパーツです---*/
+   .btns{
+    padding:30px 0px 100px;
+   }
+   .contact p{
+    font-size:13px
+   }
+   .contact input,textarea{
+    margin:5px 0px 25px;
+    border-radius:5px;
+    width:300px
+   }
+   
+   /*---フッターパーツです---*/
+   footer{
+    background-color:rgb(47,81,103);
+    color:white;
+    padding: 10px 20px;
+       margin: ;
+    height:100px;
+   }
+   .footer-logo{
+    font-size:30px;
+    float:left;
+   }
+   .footer-link{
+    float:right;
+   }
+   
+   .footer-link a{
+    display:block;
+    color:white;
+    margin:10px 0px;
+   }
+   
+   
+   
+   
+   /*---レスポンシブデザインです---*/
+   /*---スマホ　670px---*/
+   
+   @media(max-width:670px) {
+    /*---ヘッダー---*/
+    
+    header{
+     height:80px
+    }
+    
+    .header-logo{
+     float:none;
+     line-height:80px;
+     font-size:50px;
+    }
+    
+    .header-link{
+     display:none;
+    }
+    .link-icon{
+     display:block;
+     float:right;
+     font-size:50px;
+     line-height:80px;
+    }
+    .fa{
+     color:white;
+    }
+    /*---メッセージ---*/
+    
+    .message{
+     text-align:center;
+     padding:270px 0px 260px;
+    }
+    .message h1{
+     font-size:70px;
+    }
+    .message p{
+     font-size:30px;
+    }
+    
+    
+    /*--レッスン----*/
+    h3{
+     text-align:center;
+     font-size:25px;
+    }
+    
+    .lessons{
+     
+     padding:0 auto;
+     text-align:center;
+     width:100%;
+    }
+    .lesson{
+     float:none;
+     margin:50px 0px;
+     
+    }
+    .lesson img{
+     width:80%;
+    
+    }
+    
+    .lesson p{
+     font-size:28px;
+    }
+    
+    /*--コンタクト----*/
+    .btns{
+     text-align:center;
+    }
+    .btns p,input, textarea{
+     font-size:20px;
+    }
+    
+    .btns input, textarea{
+      width:70%;
+    }
+    
+    /*---フッター---*/
+    footer{
+     text-align:center;
+    }
+    
+    .footer-logo{
+     float:none;
+    }
+    
+    .footer-link{
+     float:none;
+    }
+   
+    .footer-link a{
+     display:inline-block;
+     margin:20px 20px;  
+     font-size:15px;
+    }
+   
+   }
+   
